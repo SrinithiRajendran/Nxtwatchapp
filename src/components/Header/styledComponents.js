@@ -7,7 +7,7 @@ export const LinkForLogo = styled(Link)`
 
 export const HeaderContainer = styled.div`
   background-color: #ffffff;
-  min-height: 10vh;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,7 +100,7 @@ export const MenuButtonSm = styled.button`
 /** HeaderContainerDark */
 
 export const HeaderContainerDark = styled.div`
-  min-height: 10vh;
+  height: 10vh;
   background-color: #181818;
   display: flex;
   flex-direction: row;

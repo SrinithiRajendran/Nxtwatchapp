@@ -101,6 +101,7 @@ export const ContactUsTagLine = styled.p`
 export const TrendingBarContainer = styled.div`
   height: 90vh;
   width: 100vw;
+  overflow-y: scroll;
   background-color: #f9f9f9;
   @media (min-width: 768px) {
     width: 75vw;
@@ -211,8 +212,10 @@ export const ContactUsTagLineDark = styled.p`
 `
 /** Trending bar dark */
 export const TrendingBarContainerDark = styled.div`
-  min-height: 90vh;
+  height: 90vh;
   width: 100vw;
+  padding: 15px;
+  overflow-y: auto;
   background-color: #0f0f0f;
   @media (min-width: 768px) {
     width: 75vw;

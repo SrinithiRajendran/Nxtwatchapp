@@ -83,9 +83,10 @@ export const ContactUsTagLine = styled.p`
 /** VideoBarContainer */
 
 export const VideoBarContainer = styled.div`
-  min-height: 90vh;
+  height: 90vh;
   padding: 15px;
   width: 100vw;
+  overflow-y: scroll;
   background-color: #f9f9f9;
   @media (max-width: 564px) {
     padding: 6px;
@@ -100,7 +101,7 @@ export const VideoBarContainer = styled.div`
 export const ReactPlayerContainer = styled.div`
   border-radius: 6px;
   @media (min-width: 768px) {
-    height: 60%;
+    height: 50vh;
   }
 `
 export const Title = styled.p`
@@ -276,6 +277,7 @@ export const Description = styled.p`
 /** SideBarContainerDark */
 export const SideBarContainerDark = styled.div`
   display: none;
+  height: 90vh;
   background-color: #181818;
   @media (min-width: 768px) {
     height: 90vh;
@@ -312,7 +314,8 @@ export const ContactUsTagLineDark = styled.p`
 `
 /** VideoBarContainerDark */
 export const VideoBarContainerDark = styled.div`
-  min-height: 90vh;
+  height: 90vh;
+  overflow-y: scroll;
   padding: 15px;
   width: 100vw;
   background-color: #0f0f0f;

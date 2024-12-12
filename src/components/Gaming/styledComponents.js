@@ -9,6 +9,7 @@ export const GamingRouteContainer = styled.div`
 
 export const GamingContainer = styled.div`
   min-height: 90vh;
+  overflow-y: scroll;
   display: flex;
   flex-direction: row;
 `
@@ -102,6 +103,7 @@ export const ContactUsTagLine = styled.p`
 export const GamingBarContainer = styled.div`
   height: 90vh;
   width: 100vw;
+  overflow-y: scroll;
   background-color: #f9f9f9;
   @media (min-width: 768px) {
     width: 75vw;
@@ -212,10 +214,12 @@ export const ContactUsTagLineDark = styled.p`
   font-weight: bold;
   line-height: 1.3;
 `
-/** Trending bar dark */
+/** gaming bar dark */
 export const GamingBarContainerDark = styled.div`
-  min-height: 90vh;
+  height: 90vh;
   width: 100vw;
+  padding: 15px;
+  overflow-y: auto;
   background-color: #0f0f0f;
   @media (min-width: 768px) {
     width: 75vw;

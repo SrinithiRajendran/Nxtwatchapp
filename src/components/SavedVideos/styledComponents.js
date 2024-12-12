@@ -154,6 +154,7 @@ export const ContactUsTagLineDark = styled.p`
 export const SavedBarContainer = styled.div`
   height: 90vh;
   width: 100vw;
+  overflow-y: scroll;
   background-color: #f9f9f9;
   @media (min-width: 768px) {
     width: 75vw;
@@ -205,8 +206,10 @@ export const SavedVidName = styled.h1`
 /** saved Bar Dark */
 
 export const SavedBarContainerDark = styled.div`
-  min-height: 90vh;
+  height: 90vh;
   width: 100vw;
+  padding: 15px;
+  overflow-y: auto;
   background-color: #0f0f0f;
   @media (min-width: 768px) {
     width: 75vw;
