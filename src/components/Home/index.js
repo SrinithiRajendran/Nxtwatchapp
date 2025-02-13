@@ -125,9 +125,12 @@ class Home extends Component {
   }
 
   onChangeSearch = event => {
-    this.setState({
-      searchInput: event.target.value,
-    })
+    this.setState(
+      {
+        searchInput: event.target.value,
+      },
+      this.getHomeVideos,
+    )
   }
 
   sideBarDark = () => (

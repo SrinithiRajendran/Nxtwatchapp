@@ -357,6 +357,7 @@ export const FailureContainer = styled.div`
   background-color: ${props => (props.dark ? '#0f0f0f' : '#ffffff')};
   margin-top: 10px;
   width: 100vw;
+  height: 100vh;
   @media (min-width: 768px) {
     width: 75vw;
   }

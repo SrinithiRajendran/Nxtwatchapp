@@ -240,13 +240,22 @@ export const Confirm = styled.button`
 `
 /** MenuSmModalContainer */
 export const MenuSmModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  width: 95vw;
+  align-items: flex-start;
+  justify-content: flex-start;
   background: ${props => (props.isDark ? '#181818' : '#ffffff')};
+  z-index: 1000;
+  overflow: hidden;
 `
+
 export const CloseButton = styled.button`
   align-self: flex-end;
   background-color: transparent;
@@ -265,13 +274,12 @@ export const NavsContainer = styled.div`
   min-height: 60vh;
 `
 export const NavItems = styled.ul`
-  min-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-left: 0;
-  margin-top: 80px;
+  margin-top: 20px;
+  list-style: none;
 `
 
 export const NavItem = styled.li`
@@ -284,11 +292,14 @@ export const NavItem = styled.li`
   cursor: pointer;
   min-width: 100%;
   padding-top: 10px;
-  padding-left: 50px;
+  padding-left: 10px;
   margin-bottom: 5px;
   background-color: ${props => props.activeNav && '#d7dfe9'};
-  @media (min-width: 400px) {
-    padding-left: 160px;
+
+  transition: background-color; /* Smooth transition for background color */
+
+  &:hover {
+    background-color: #d3d3d3; /* Change the background to grey on hover */
   }
 `
 export const LinkGenerate = styled(Link)`

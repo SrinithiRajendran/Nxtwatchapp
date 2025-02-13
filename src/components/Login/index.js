@@ -36,8 +36,8 @@ import {
 class Login extends Component {
   state = {
     showSubmitError: false,
-    username: '',
-    password: '',
+    username: 'rahul',
+    password: 'rahul@2021',
     errorMsg: '',
     inputType: 'password',
   }
@@ -129,6 +129,8 @@ class Login extends Component {
                 type="text"
                 placeholder="Username (rahul)"
                 value={username}
+                defaultValue={username}
+                readOnly
                 onChange={this.onChangeUserName}
               />
             </UsernameContainer>
@@ -138,6 +140,8 @@ class Login extends Component {
                 id="PASSWORD"
                 type={inputType}
                 placeholder="Password (rahul@2021)"
+                defaultValue={password}
+                readOnly
                 value={password}
                 onChange={this.onChangePassword}
               />
@@ -183,6 +187,8 @@ class Login extends Component {
               <InputDark
                 id="USERNAME"
                 value={username}
+                defaultValue={username}
+                readOnly
                 type="text"
                 placeholder="Username"
                 onChange={this.onChangeUserName}
@@ -193,6 +199,8 @@ class Login extends Component {
               <InputDark
                 id="PASSWORD"
                 value={password}
+                defaultValue={password}
+                readOnly
                 type={inputType}
                 placeholder="Password"
                 onChange={this.onChangePassword}
